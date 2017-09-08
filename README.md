@@ -5,7 +5,7 @@ This package implements a server-side strategy for temporary collection and
 recovery of [PSR-7](http://www.php-fig.org/psr/psr-7/) `UploadedFile` objects.
 
 A dedicated [FlySystem](https://flysystem.thephpleague.com/) port is
-[also available](https://packagist.org/packages/kodus/tempkit-ts).
+[also available](https://github.com/kodus/tempkit-fs).
 
 [![PHP Version](https://img.shields.io/badge/php-7.0%2B-blue.svg)](https://packagist.org/packages/kodus/tempkit)
 

@@ -7,9 +7,9 @@ use Kodus\Helpers\UUID;
 use Kodus\TempKit\TempFile;
 use Kodus\TempKit\TempFileRecoveryException;
 use Kodus\TempKit\TempFileService;
+use Nyholm\Psr7\Stream;
+use Nyholm\Psr7\UploadedFile;
 use UnitTester;
-use Zend\Diactoros\Stream;
-use Zend\Diactoros\UploadedFile;
 
 class TempFileServiceCest
 {
@@ -104,7 +104,7 @@ class TempFileServiceCest
             file_put_contents($uploaded_file_path, $file_contents);
 
             return new UploadedFile(
-                new Stream($uploaded_file_path),
+                Stream::create(fopen($uploaded_file_path, 'r')),
                 strlen($file_contents),
                 UPLOAD_ERR_OK,
                 self::FILENAME,

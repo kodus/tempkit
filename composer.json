@@ -18,7 +18,7 @@
         "kodus/uuid-v4": "dev-upgrade-php-81 as 1.1"
     },
     "require-dev": {
-        "zendframework/zend-diactoros": "^1.4",
+        "nyholm/psr7": "^1.5",
         "codeception/codeception": "^5",
         "codeception/module-asserts": "^3.0"
     }

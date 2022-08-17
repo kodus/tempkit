@@ -7,7 +7,7 @@ recovery of [PSR-7](http://www.php-fig.org/psr/psr-7/) `UploadedFile` objects.
 A dedicated [FlySystem](https://flysystem.thephpleague.com/) port is
 [also available](https://github.com/kodus/tempkit-fs).
 
-[![PHP Version](https://img.shields.io/badge/php-7.0%2B-blue.svg)](https://packagist.org/packages/kodus/tempkit)
+[![PHP Version](https://img.shields.io/badge/php-8.0%2B-blue.svg)](https://packagist.org/packages/kodus/tempkit)
 
 You can use this service to implement controllers that collect uploaded files
 posted asynchronously by a browser and return the temporary file UUIDs, then,
